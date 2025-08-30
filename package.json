@@ -1,0 +1,31 @@
+{
+  "name": "sql-query-editor",
+  "version": "1.0.0",
+  "description": "A SQL query editor built with Bun and Hono",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot server/index.js",
+    "start": "bun server/index.js",
+    "build:client": "bun build client/index.jsx --outdir=public --minify",
+    "build": "bun run build:client"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.1",
+    "hono": "^4.6.3",
+    "mssql": "^11.0.1",
+    "mysql2": "^3.11.3",
+    "pg": "^8.12.0",
+    "sqlite3": "^5.1.7",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.9",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}

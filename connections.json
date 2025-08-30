@@ -1,0 +1,38 @@
+{
+  "databases": [
+    {
+      "name": "ms-sql-db",
+      "type": "mssql",
+      "host": "server",
+      "port": 1433,
+      "database": "db-name",
+      "username": "user-name",
+      "password": "password",
+      "encrypt": true,
+      "trustServerCertificate": false
+    },
+    {
+      "name": "production_postgres",
+      "type": "postgres",
+      "host": "prod-db.example.com",
+      "port": 5432,
+      "database": "prod_db",
+      "username": "prod_user",
+      "password": "prod_password"
+    },
+    {
+      "name": "local_sqlite",
+      "type": "sqlite",
+      "database": "./data/local.db"
+    },
+    {
+      "name": "analytics_mysql",
+      "type": "mysql",
+      "host": "analytics.example.com",
+      "port": 3306,
+      "database": "analytics",
+      "username": "analytics_user",
+      "password": "analytics_password"
+    }
+  ]
+}
